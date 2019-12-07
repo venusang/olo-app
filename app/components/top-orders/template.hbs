@@ -1,0 +1,17 @@
+
+<h1>Top 20 Pizza Orders</h1>
+<p>
+  Ranking is from highest to least.  So, for example, the pizza listed as #1 in the list below is the top ordered pizza out of the 20 shown.
+</p>
+<p>
+  Next to each pizza type ordered is the number of orders placed for each.
+</p>
+
+<ol>
+  {{#each pizzaOrderTally as |pizzaOption|}}
+    <li>
+      <div class="order-type">{{pizzaOption.order}}</div>
+      <div class="order-count">{{pizzaOption.count}}</div>
+    </li>
+  {{/each}}
+</ol>
